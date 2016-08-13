@@ -1,4 +1,4 @@
-![](http://ww4.sinaimg.cn/large/40dfde6fgw1f6sbbyd3u9j20jg0b4tah.jpg)
+![](http://ww2.sinaimg.cn/large/40dfde6fgw1f6sd8ivtgqg20wg0nv4qr.gif)
 
 # MMDComic 
 
