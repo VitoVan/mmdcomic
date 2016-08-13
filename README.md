@@ -9,6 +9,7 @@ MMDComic is a online tool for Making comic via mmd models just in browser.
 ```
 git clone git@github.com:easychen/mmdcomic.git
 cd mmdcomic
+composer install --no-dev
 php -S localhost:8888 route.php
 ```
 
@@ -38,6 +39,7 @@ MMDComic 是一个使用MMD模型在线制作漫画的小工具。
 ```
 git clone git@github.com:easychen/mmdcomic.git
 cd mmdcomic
+composer install --no-dev
 php -S localhost:8888 route.php
 ```
 
