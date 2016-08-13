@@ -1,0 +1,418 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","STHeitiSC-Light","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    background-color: #9fb1c3;
+}
+
+.nav-main-header a 
+{
+	font-weight: normal;
+}
+
+.notice-box
+{
+	padding:10%;
+	text-align: center;
+	line-height: 200%;
+}
+
+
+.marea
+{
+	margin-top:100px;
+	margin-bottom: 100px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.marea .bar
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:16px;
+}
+
+.marea .bar a
+{	
+	color:white;
+}
+
+
+.manga
+{
+	background: white;
+	margin:0px;
+	padding:0px;
+	padding-bottom:100px;
+	padding-top:100px
+}
+
+.manga li
+{
+	display:  block;
+	
+}
+
+.manga li.grid
+{
+	position: relative;
+	min-height: 400px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.manga li.grid canvas
+{
+	width:700px;
+	height:400px;
+}
+
+.manga li:hover
+{
+	background-color: #FFFFf3;
+}
+
+
+.manga li.active
+{
+	background-color: #FFFFf3;
+}
+
+footer
+{
+	text-align:  center;
+	margin-bottom: 40px;
+	color:white;
+}
+
+.sidebar
+{
+	position: absolute;
+	top:10px;
+	left:-40px;
+	min-height: 40px;
+	width:30px;
+	text-align: center;
+}
+
+#mo3dbtn,#rolebtn
+{
+	position: absolute;
+	z-index:1048;
+	display: none;
+}
+
+#mo3dbtn span,#rolebtn span
+{
+	position: relative;
+	font-size: 20px;
+	width: 30px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	background-color:#557AA1;
+	color:white;
+	margin-left: 5px;
+	border-radius:5px;
+	cursor:pointer;
+}
+
+
+
+#mo3dbtn span:hover,#rolebtn span:hover
+{
+	background-color: black;
+}
+
+.sidebar span
+{
+	font-size: 24px;
+	width: 30px;
+	height:30px;
+	line-height: 30px;
+	display: block;
+	background-color:#557AA1;
+	color:white;
+	margin-top: 5px;
+	border-radius:5px;
+	cursor:pointer;
+}
+
+.sidebar span.active
+{
+	background-color: black;
+}
+
+.sidebar span:hover
+{
+	background-color: black;
+}
+
+
+
+.mtdiv,.mo3ddiv
+{
+	display: none;
+	position: fixed;
+	width: 700px;
+	height: 400px;
+	background-color: white;
+	top: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 9999;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-shadow: 5px 5px 10px 10px rgba(50, 50, 50, 0.25);
+}
+
+.mo3ddiv
+{
+	position: absolute;
+	width: 400px;
+	left:500px;
+	top:400px;
+}
+
+.mtdiv .nav-tabs,.mo3ddiv .nav-tabs
+{
+	border-bottom:0px!important;
+}
+
+.mtdiv .nav-tabs span,.mo3ddiv .nav-tabs span
+{
+	font-size:20px;
+}
+
+.mtlistcontent,.mo3dlistcontent
+{
+	text-align: left;
+	max-height: 340px;
+	overflow-y: auto; 
+}
+
+.mtlistcontent .mtitem,.mo3dlistcontent .mtitem
+{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer;
+}
+
+.mtlistcontent .mtitem img.item,.mo3dlistcontent .mtitem img.item
+{
+	width: 58px;
+	height: 58px;
+	border: 1px solid #ccc;
+	
+}
+
+.mtdiv .hr,.mo3ddiv .hr
+{
+	border-bottom:1px solid #ccc;
+}
+
+
+#sidepanel 
+{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 320px;
+	height: 100%;  /* remember to set 100% height for all its parents too, including html and body */
+	background-color: white;
+	transition: transform .2s;
+	transform: translateX(320px);
+}
+
+#sidepanel.show
+{
+	transform: translateX(0px);
+}
+
+#sidepanel .box
+{
+	border-bottom: 1px dotted #ccc; 
+}
+
+#layer
+{
+	min-height:300px;
+}
+
+.fclayers
+{
+	margin:0px;
+	padding: 0px;
+	display: none;
+}
+
+.fclayers.active
+{
+	display: block;
+}
+
+.fclayers li
+{
+	display: block;
+}
+
+.layer-item
+{
+	border:1px solid #ccc;
+	padding:5px;
+	margin:2px;
+}
+
+.layer-item span.no
+{
+	color:#ccc;
+}
+
+.layer-item span.icon
+{
+	color:#557AA1;
+}
+
+.layer-item .control
+{
+	float: right;
+	display: none;
+}
+
+.layer-item .control span
+{
+	padding-left:5px;
+	cursor: pointer;
+}
+
+.layer-item:hover .control
+{
+	display: block;
+}
+
+.fclayers li.active
+{
+	background-color: #FFFFcc;
+}
+
+#output
+{
+	min-height: 200px;
+	max-height: 300px;
+}
+
+#output .loglist
+{
+	margin:0px;
+	padding:0px;
+}
+
+#output .loglist li
+{
+	display: block;
+	border-bottom: 1px solid #eee;
+	color:#aaa;
+	line-height: 30px;
+}
+
+#output .loglist li:last-child
+{
+	border-bottom: 0px;
+}
+
+#prop
+{
+	min-height: 200px;
+}
+
+#prop .proplist
+{
+	margin:0px;
+	padding:0px;
+}
+
+#prop .proplist li
+{
+	display: block;
+	border-bottom:1px solid #ccc ; 
+	line-height: 32px;
+}
+
+#prop .proplist li:last-child
+{
+	border-bottom: 0px;
+}
+
+#prop .proplist li label
+{
+	width:50%;
+	text-align: left;
+	display: inline-block;
+}
+
+#prop .proplist li input[type="text"]
+{
+	border: 0px !important;
+}
+
+#prop .proplist li:hover input[type="text"]
+{
+	padding-left:5px;
+	background-color: #FFFFcc;
+}
+
+.proplist
+{
+	display: none;
+}
+
+.proplist.active
+{
+	display: block;
+}
+
+#sidepanel .box h1
+{
+	margin:0px;
+	padding:0px;
+	padding-left:5px;
+	padding-right: 5px;
+	line-height: 30px;
+	font-size: 14px;
+	color:white;
+	background-color: #557AA1;
+}
+
+#sidepanel .box .content
+{
+	padding:5px;
+}
+
+
+
+#overlay
+{
+	background-color: rgba( 255 , 255 , 255 , .2 );
+	position: fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	z-index:999;
+	display: none;
+}
+
+.mo3diframe
+{
+	border:1px solid red;
+	position: absolute; 
+	z-index:1024;
+}
+

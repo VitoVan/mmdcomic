@@ -1,0 +1,14 @@
+body
+{
+	background: transparent;
+	overflow: hidden;
+}
+
+#mbox
+{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:1400px;
+	height:800px;
+}
